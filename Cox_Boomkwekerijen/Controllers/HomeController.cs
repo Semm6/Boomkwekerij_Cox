@@ -20,13 +20,24 @@ namespace Cox_Boomkwekerijen.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View("Index");
         }
 
-        public IActionResult Privacy()
+        public IActionResult Werkwijze()
         {
-            return View();
+            return View("Werkwijze");
         }
+
+        public IActionResult Over_ons()
+        {
+            return View("Over_ons");
+        }
+
+        public IActionResult Contact()
+        {
+            return View("Contact");
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

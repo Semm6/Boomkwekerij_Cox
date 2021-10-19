@@ -1,0 +1,48 @@
+﻿body, html {
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*----------big container----------*/
+.container-big {
+    height: 500px;
+    margin-bottom: 10px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+/*----------container----------*/
+
+.header {
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.headerimg {
+    width: 100%;
+    margin-top: 100px;
+}
+
+
+/*----------bottom continer----------*/
+.container-bottom {
+    margin-top: 50px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+    width: 100%;
+    justify-content: center;
+    background-color: #93bf85;
+}
+
+.headbottom {
+    text-align: center;
+    position: relative;
+    margin-bottom: 25px;
+    transform: translateY(50%);
+    color: black;
+}

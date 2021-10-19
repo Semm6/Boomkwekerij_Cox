@@ -1,2 +1,162 @@
-﻿body {
+﻿body, html {
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h5 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+h4 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+p {
+    text-align: center;
+}
+
+/*----------big container----------*/
+.container-big {
+    height: 500px;
+    margin-bottom: 10px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.heroimage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+}
+
+/*----------middle container----------*/
+.container-middle {
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.fade-effect1 {
+    display: block;
+    border: none;
+    color: white;
+    height: 1px;
+    background: black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#fff));
+}
+
+.brandname {
+    text-align: center;
+    font-size: 400%;
+}
+
+.textbelow {
+    margin-top: 2px;
+}
+
+.containerimg {
+    /*Css voor img in container middelste colom*/
+}
+
+.containertextleft {
+    text-align: left
+}
+
+.containertextright {
+    text-align: center
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.flex-item-left {
+    background-color: red;
+    padding: 10px;
+    flex: 50%;
+}
+
+.flex-item-right {
+    background-color: dodgerblue;
+    padding: 10px;
+    flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+
+/*--------------------Content container-------------------- */
+
+.prodname {
+    text-align: center;
+    position: relative;
+    top: 30%;
+    transform: translateY(-50%);
+}
+
+.imgfront {
+    max-height: 100%;
+    max-width: 200px;
+}
+
+
+.prodinfo {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 30%;
+    transform: translateY(-50%);
+}
+
+
+/*----------bottom continer----------*/
+.container-bottom {
+    margin-top: 50px;
+}
+
+.flex-container1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+    width: 100%;
+    justify-content: center;
+}
+
+.parent-container {
+    display: flex;
+    background-color: #93bf85;
+    width: 100%;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.child-container {
+    width: 25%;
+}
+
+.headbottom {
+    text-align: center;
+    position: relative;
+    margin-bottom: 25px;
+    transform: translateY(50%);
+    color: black;
 }

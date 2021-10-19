@@ -1,7 +1,45 @@
-﻿@{
-    ViewData["Title"] = "Home";
-}
+﻿<html>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-</div>
+<head>
+    <link rel="stylesheet" type="text/css" href="~/css/contact.css">
+</head>
+
+
+<body>
+
+    <h1>Contact Boomkwekerij Cox</h1>
+    <p>Raaystraat 11</p>
+    <p>6071NC Swalmen</p>
+    <p>0475 504 261</p>
+
+    <form action="https://formsubmit.co/sem.dewilde6@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+
+        <div class="container">
+            <div class="textboxes">
+
+                <label for="Voornaam"><b>Voornaam</b></label>
+                <input type="text" name="Voornaam" placeholder="Voornaam" required>
+
+                <label for="Achternaam"><b>Achternaam</b></label>
+                <input type="text" name="Achternaam" placeholder="Achternaam" required>
+
+                <label for="Email"><b>Email</b></label>
+                <input type="email" name="Email" placeholder="Email adress" required>
+
+                <label for="Bedrijf"><b>Bedrijf</b></label>
+                <input type="text" name="Bedrijf" placeholder="Bedrijf" required>
+
+                <label for="Telefoon"><b>Telefoon</b></label>
+                <input type="text" name="Telefoon" placeholder="Telefoon">
+
+                <label for="Opmerking"><b>Opmerking</b></label>
+                <textarea type="text" name="Opmerking" rows="5" cols="20" placeholder="Message"></textarea>
+
+                <button type="submit">Verzenden</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

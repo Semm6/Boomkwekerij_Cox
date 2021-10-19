@@ -9,29 +9,16 @@ using Cox_Boomkwekerijen.Models;
 
 namespace Cox_Boomkwekerijen.Controllers
 {
-    public class HomeController : Controller
+    public class ProductController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        public IActionResult Assortiment()
         {
-            _logger = logger;
+            return View("Assortiment");
         }
 
-        public IActionResult Index()
+        public IActionResult Details()
         {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View("Details");
         }
     }
 }
